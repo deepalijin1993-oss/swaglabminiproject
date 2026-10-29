@@ -43,12 +43,7 @@ WebDriver driver;
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement checkoutBtn = wait.until(ExpectedConditions.elementToBeClickable(By.id("checkout")));
         checkoutBtn.click();
-    
-    
-    
-    
-    
-    }
+     }
         @FindBy(id = "first-name")
         WebElement firstname;
 
@@ -64,8 +59,11 @@ WebDriver driver;
         @FindBy(id = "finish")
         WebElement finishbtn;
 
-        @FindBy(id = "back-to-products")
-        WebElement backhomebtn;
+        @FindBy(id = "react-burger-menu-btn")
+        WebElement hamburgermenu;
+
+        @FindBy(id = "logout_sidebar_link")
+        WebElement logoutbtn;
 
         // Method to enter First Name, Last Name, and Postal Code and click Continue
         public void enterCustomerDetails(String fName, String lName, String pCode) {
@@ -85,14 +83,22 @@ WebDriver driver;
             wait.until(ExpectedConditions.elementToBeClickable(finishbtn));
             finishbtn.click();
         }
-
-        // Method to return back to the home page after the order
-        public void clickBackHome() {
+     // Method to click hamburger menu and logout
+        public void logoutProcess() throws InterruptedException {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            wait.until(ExpectedConditions.elementToBeClickable(backhomebtn));
-            backhomebtn.click();
+            
+            //  click hampberg menu
+            WebElement menuBtn = wait.until(ExpectedConditions.elementToBeClickable(hamburgermenu));
+            menuBtn.click();
+            Thread.sleep(2000); 
+            
+            //  click logout button
+            WebElement logoutLink = wait.until(ExpectedConditions.elementToBeClickable(logoutbtn));
+            logoutLink.click();
+        }
+        
         }
     
     
-}
+
 

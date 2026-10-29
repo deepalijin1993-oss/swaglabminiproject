@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-29T20:25:23 IST" name="Suite" finished-at="2026-10-29T20:25:47 IST" duration-ms="24074">
+  <suite started-at="2026-10-29T22:55:56 IST" name="Suite" finished-at="2026-10-29T22:56:29 IST" duration-ms="32930">
     <groups>
     </groups>
-    <test started-at="2026-10-29T20:25:23 IST" name="Test" finished-at="2026-10-29T20:25:47 IST" duration-ms="24074">
+    <test started-at="2026-10-29T22:55:56 IST" name="Test" finished-at="2026-10-29T22:56:29 IST" duration-ms="32930">
+      <class name="Testpkg.Product_test">
+        <test-method signature="logoValidationTest()[pri:1, instance:Testpkg.Product_test@7d20d0b]" started-at="2026-10-29T22:56:01 IST" name="logoValidationTest" finished-at="2026-10-29T22:56:01 IST" duration-ms="464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoValidationTest -->
+        <test-method signature="addItemToCartAndDisplayProductsTest()[pri:2, instance:Testpkg.Product_test@7d20d0b]" started-at="2026-10-29T22:56:01 IST" name="addItemToCartAndDisplayProductsTest" finished-at="2026-10-29T22:56:23 IST" duration-ms="21631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemToCartAndDisplayProductsTest -->
+      </class> <!-- Testpkg.Product_test -->
       <class name="Testpkg.Login_test">
-        <test-method is-config="true" signature="browser_launch()[pri:0, instance:Testpkg.Login_test@4c178a76]" started-at="2026-10-29T20:25:20 IST" name="browser_launch" finished-at="2026-10-29T20:25:23 IST" duration-ms="2443" status="PASS">
+        <test-method is-config="true" signature="browser_launch()[pri:0, instance:Testpkg.Login_test@544fa968]" started-at="2026-10-29T22:55:54 IST" name="browser_launch" finished-at="2026-10-29T22:55:56 IST" duration-ms="2658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser_launch -->
-        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:1, instance:Testpkg.Login_test@4c178a76]" started-at="2026-10-29T20:25:24 IST" name="logintest" data-provider="loginData" finished-at="2026-10-29T20:25:24 IST" duration-ms="343" status="PASS">
+        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:1, instance:Testpkg.Login_test@544fa968]" started-at="2026-10-29T22:55:59 IST" name="logintest" data-provider="loginData" finished-at="2026-10-29T22:56:00 IST" duration-ms="774" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:1, instance:Testpkg.Login_test@4c178a76]" started-at="2026-10-29T20:25:24 IST" name="logintest" data-provider="loginData" finished-at="2026-10-29T20:25:24 IST" duration-ms="266" status="PASS">
+        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:1, instance:Testpkg.Login_test@544fa968]" started-at="2026-10-29T22:56:00 IST" name="logintest" data-provider="loginData" finished-at="2026-10-29T22:56:00 IST" duration-ms="551" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:1, instance:Testpkg.Login_test@4c178a76]" started-at="2026-10-29T20:25:24 IST" name="logintest" data-provider="loginData" finished-at="2026-10-29T20:25:25 IST" duration-ms="272" status="PASS">
+        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:1, instance:Testpkg.Login_test@544fa968]" started-at="2026-10-29T22:56:00 IST" name="logintest" data-provider="loginData" finished-at="2026-10-29T22:56:01 IST" duration-ms="425" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,21 +69,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method signature="logoverification()[pri:2, instance:Testpkg.Login_test@4c178a76]" started-at="2026-10-29T20:25:25 IST" name="logoverification" finished-at="2026-10-29T20:25:25 IST" duration-ms="70" status="PASS">
+        <test-method signature="logoverification()[pri:2, instance:Testpkg.Login_test@544fa968]" started-at="2026-10-29T22:56:01 IST" name="logoverification" finished-at="2026-10-29T22:56:01 IST" duration-ms="91" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoverification -->
-        <test-method signature="loginButtonTest()[pri:3, instance:Testpkg.Login_test@4c178a76]" started-at="2026-10-29T20:25:25 IST" name="loginButtonTest" finished-at="2026-10-29T20:25:25 IST" duration-ms="97" status="PASS">
+        <test-method signature="loginButtonTest()[pri:3, instance:Testpkg.Login_test@544fa968]" started-at="2026-10-29T22:56:01 IST" name="loginButtonTest" finished-at="2026-10-29T22:56:01 IST" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginButtonTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Testpkg.Login_test@4c178a76]" started-at="2026-10-29T20:25:47 IST" name="teardown" finished-at="2026-10-29T20:25:47 IST" duration-ms="639" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testpkg.Login_test@544fa968]" started-at="2026-10-29T22:56:29 IST" name="teardown" finished-at="2026-10-29T22:56:30 IST" duration-ms="576" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Testpkg.Login_test -->
       <class name="Testpkg.Checkout_test">
-        <test-method signature="iconclick()[pri:0, instance:Testpkg.Checkout_test@7770f470]" started-at="2026-10-29T20:25:25 IST" name="iconclick" finished-at="2026-10-29T20:25:47 IST" duration-ms="21852" status="PASS">
+        <test-method signature="iconclick()[pri:0, instance:Testpkg.Checkout_test@77f1baf5]" started-at="2026-10-29T22:56:23 IST" name="iconclick" finished-at="2026-10-29T22:56:29 IST" duration-ms="6119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iconclick -->

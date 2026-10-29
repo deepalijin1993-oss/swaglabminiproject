@@ -25,6 +25,7 @@ public class Checkout_test extends Base_class {
         log.login_button();
 
         // adding product to cart
+        pdt.selectZtoA();
         pdt.additems();
 
         // 1. moving to check clicking carticon
@@ -36,9 +37,11 @@ public class Checkout_test extends Base_class {
         // 3. finish order
         checkout_page.finishOrder();
 
-        // 4. return to home page
-        checkout_page.clickBackHome();
+     // 4. Logout from application 
+        checkout_page.logoutProcess();
 
-        test.pass("Checkout Flow completed successfully");
+        test.pass("Checkout Flow completed and logged out successfully");
+
+        
     }
 }

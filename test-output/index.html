@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Testpkg.Product_test" class="method navigator-link" hash-for-method="addItemToCartAndDisplayProductsTest">addItemToCartAndDisplayProductsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Testpkg.Checkout_test" class="method navigator-link" hash-for-method="iconclick">iconclick</a> <!-- method navigator-link -->
@@ -124,6 +129,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Testpkg.Login_test" class="method navigator-link" hash-for-method="logintest(standard_user, secret_sauce)">logintest(standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Testpkg.Product_test" class="method navigator-link" hash-for-method="logoValidationTest">logoValidationTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -192,6 +202,28 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">Testpkg.Product_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addItemToCartAndDisplayProductsTest">
+                  </a> <!-- addItemToCartAndDisplayProductsTest -->
+                  <span class="method-name">addItemToCartAndDisplayProductsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoValidationTest">
+                  </a> <!-- logoValidationTest -->
+                  <span class="method-name">logoValidationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">Testpkg.Checkout_test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -217,6 +249,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Testpkg.Login_test&quot;/&gt;
+      &lt;class name=&quot;Testpkg.Product_test&quot;/&gt;
       &lt;class name=&quot;Testpkg.Checkout_test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -231,7 +264,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -257,36 +290,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'iconclick')
-data.setCell(0, 2, 'Testpkg.Checkout_test')
-data.setCell(0, 3, 21852);
+data.setCell(0, 1, 'addItemToCartAndDisplayProductsTest')
+data.setCell(0, 2, 'Testpkg.Product_test')
+data.setCell(0, 3, 21631);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'logintest')
-data.setCell(1, 2, 'Testpkg.Login_test')
-data.setCell(1, 3, 343);
+data.setCell(1, 1, 'iconclick')
+data.setCell(1, 2, 'Testpkg.Checkout_test')
+data.setCell(1, 3, 6119);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'logintest')
 data.setCell(2, 2, 'Testpkg.Login_test')
-data.setCell(2, 3, 272);
+data.setCell(2, 3, 774);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'logintest')
 data.setCell(3, 2, 'Testpkg.Login_test')
-data.setCell(3, 3, 266);
+data.setCell(3, 3, 551);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginButtonTest')
-data.setCell(4, 2, 'Testpkg.Login_test')
-data.setCell(4, 3, 97);
+data.setCell(4, 1, 'logoValidationTest')
+data.setCell(4, 2, 'Testpkg.Product_test')
+data.setCell(4, 3, 464);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'logoverification')
+data.setCell(5, 1, 'logintest')
 data.setCell(5, 2, 'Testpkg.Login_test')
-data.setCell(5, 3, 70);
+data.setCell(5, 3, 425);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginButtonTest')
+data.setCell(6, 2, 'Testpkg.Login_test')
+data.setCell(6, 3, 142);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'logoverification')
+data.setCell(7, 2, 'Testpkg.Login_test')
+data.setCell(7, 3, 91);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -301,9 +342,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Testpkg.Product_test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">teardown</span>
+                <br/>
+                <span class="ignored-method-name">browser_launch</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">Testpkg.Checkout_test</span>
               <div class="ignored-methods-div">
@@ -328,37 +378,48 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">logintest(aathira, aathi123)</span>
-                <span class="method-start">3590 ms</span>
+                <span class="method-start">5297 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logintest(kaavya, kavi123)</span>
-                <span class="method-start">3941 ms</span>
+                <span class="method-start">6085 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logintest(standard_user, secret_sauce)</span>
-                <span class="method-start">4213 ms</span>
+                <span class="method-start">6686 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logoverification</span>
-                <span class="method-start">4491 ms</span>
+                <span class="method-start">7121 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginButtonTest</span>
-                <span class="method-start">4564 ms</span>
+                <span class="method-start">7212 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Testpkg.Product_test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">logoValidationTest</span>
+                <span class="method-start">7360 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addItemToCartAndDisplayProductsTest</span>
+                <span class="method-start">7833 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testpkg.Checkout_test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">iconclick</span>
-                <span class="method-start">4665 ms</span>
+                <span class="method-start">29464 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testpkg.Login_test</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">26587 ms</span>
+                <span class="method-start">35689 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -3,13 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Testpkg.Product_test">
-        <methods>
-          <include name="logoValidationTest"/>
-          <include name="teardown"/>
-          <include name="browser_launch"/>
-        </methods>
-      </class> <!-- Testpkg.Product_test -->
       <class name="Testpkg.Checkout_test">
         <methods>
           <include name="iconclick"/>

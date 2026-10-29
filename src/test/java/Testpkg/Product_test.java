@@ -51,7 +51,10 @@ public class Product_test extends Base_class {
         log.login_button();
 
         test = extent.createTest("Add items to cart and display products test");
-
+     // Add items to cart
+        pdt.selectZtoA(); 
+        Thread.sleep(2000); 
+        pdt.additems();   
         // Add items to cart
         pdt.additems();
 

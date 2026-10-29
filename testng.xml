@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="Testpkg.Login_test"/>
-   
+    <class name="Testpkg.Product_test"/>
       <class name="Testpkg.Checkout_test"/>
     </classes>
   </test>
