@@ -1,9 +1,13 @@
 package Pagepkg;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Login_page {
 	 WebDriver driver;
@@ -39,12 +43,17 @@ public class Login_page {
 
 	    // Method for username and password
 	    public void setvalue(String user, String pwd) throws InterruptedException {
+	    	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    	    
+	    	    wait.until(ExpectedConditions.visibilityOf(username));
 	        username.sendKeys(user);
 	        pass.sendKeys(pwd);
 	    }
 
 	    //to click login button
 	    public void login_button() {
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	       wait.until(ExpectedConditions.elementToBeClickable(login));
 	        login.click();
 	    }
 	}

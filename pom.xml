@@ -6,10 +6,11 @@
   <artifactId>SwagLabsMiniproject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 <dependencies>
-  <dependency>
+ <!-- Selenium Java Dependency -->
+<dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.29.0</version> 
+    <version>4.27.0</version> 
 </dependency>
 
       <!-- TestNG -->

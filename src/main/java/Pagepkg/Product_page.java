@@ -1,11 +1,14 @@
 package Pagepkg;
 
+import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Product_page {
 
@@ -35,15 +38,20 @@ public class Product_page {
         return logo;
     }
 
-    // Method to add items to cart
+ // Method to add items to cart
     public void additems() throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.visibilityOfAllElements(cartbutton));
+     
+//        wait.until(ExpectedConditions.visibilityOfAllElements(cartbutton));
+        
+        Thread.sleep(2000);
+        
         for (WebElement items : cartbutton) {
-            Thread.sleep(3000);
             System.out.println(items.getText());
             items.click();
         }
     }
-
     // Method to select Z to A from dropdown 
     public void selectZtoA() {
         Select sel = new Select(dropdown);

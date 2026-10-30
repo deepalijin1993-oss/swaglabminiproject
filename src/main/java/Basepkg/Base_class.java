@@ -3,7 +3,9 @@ package Basepkg;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -21,8 +23,9 @@ public class Base_class {
     public void browser_launch() {
         extent = Reporter_class.sam();
         driver = new ChromeDriver();
+       driver.manage().deleteAllCookies();
         driver.get(url);
-        driver.manage().window().maximize();
+      
     }
 
     @AfterSuite

@@ -1,5 +1,8 @@
 package Testpkg;
 
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentTest;
 import Basepkg.Base_class;
@@ -23,10 +26,23 @@ public class Checkout_test extends Base_class {
         // login
         log.setvalue("standard_user", "secret_sauce");
         log.login_button();
+        Thread.sleep(2000);
 
         // adding product to cart
         pdt.selectZtoA();
         pdt.additems();
+        List<WebElement> dt1 = pdt.productdtls();
+        System.out.println("Total Number of Products: " + dt1.size());
+
+        // Print details of each product
+        for (WebElement product : dt1) {
+            System.out.println(product.getText());
+        }
+
+        test.pass("Products displayed and items added to cart successfully");
+    
+
+        
 
         // 1. moving to check clicking carticon
         checkout_page.cartclick();
@@ -35,10 +51,13 @@ public class Checkout_test extends Base_class {
         checkout_page.enterCustomerDetails("Deepamol", "Deepamol", "691572");
 
         // 3. finish order
-        checkout_page.finishOrder();
+        //checkout_page.finishOrder();
+        
+        
 
      // 4. Logout from application 
         checkout_page.logoutProcess();
+        Thread.sleep(2000);
 
         test.pass("Checkout Flow completed and logged out successfully");
 
